@@ -93,4 +93,4 @@ Follow Along!
         Image(filename=output_path+'/depth_result.jpg') 
 
 
-    .. thumbnail:: /_images/course_3/3.ai_segmentation_depth/depth_result.jpg
+    .. thumbnail:: /_images/course_3/3.ai_segmentation_depth/depth_result.png

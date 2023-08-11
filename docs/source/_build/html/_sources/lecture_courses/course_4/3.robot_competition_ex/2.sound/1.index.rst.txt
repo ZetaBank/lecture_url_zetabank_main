@@ -1,10 +1,8 @@
-Dancing With Music
-=====================================
+Follow Along!
+============================
 
-
-Here are the contents for this section:
+Here are the follow along contents:
 
 .. toctree:: 
 
-    2.follow_along_1
-    3.follow_along_2
+    2.sound
