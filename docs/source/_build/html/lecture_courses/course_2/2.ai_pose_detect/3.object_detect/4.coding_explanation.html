@@ -245,13 +245,10 @@
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Coding Explanation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#major-functionalities">Major Functionalities</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#minor-functionalities">Minor Functionalities</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="5.mission.html">Mission</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="5.mission.html#writing-custom-detectnet-program">Writing Custom detectNet Program</a></li>
-<li class="toctree-l4"><a class="reference internal" href="5.mission.html#executing-the-custom-program">Executing the Custom Program</a></li>
-<li class="toctree-l4"><a class="reference internal" href="5.mission.html#let-s-change-the-overlay">Let’s Change the Overlay!!!</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="6.discussion.html">Discussion</a></li>
@@ -558,7 +555,7 @@
 <h1>Coding Explanation<a class="headerlink" href="#coding-explanation" title="Permalink to this heading"></a></h1>
 <section id="major-functionalities">
 <h2>Major Functionalities<a class="headerlink" href="#major-functionalities" title="Permalink to this heading"></a></h2>
-<p class="linemarker linemarker-7">For our Pose Estimation task, we use NVIDIA built python program called the <code class="docutils literal notranslate"><span class="pre">detectnet.py</span></code>.
+<p class="linemarker linemarker-7">For our Object Detection task, we use NVIDIA built python program called the <code class="docutils literal notranslate"><span class="pre">detectnet.py</span></code>.
 The program does 3 major functions:</p>
 <ol class="arabic simple">
 <li><p class="linemarker linemarker-10">It manages input streams whether it is an image, a video or a camera.</p></li>
@@ -588,8 +585,8 @@ within our jupyter notebook.</p>
 </li>
 <li><p class="linemarker linemarker-37">After choosing and initializing the name of our input images we can see that the <code class="docutils literal notranslate"><span class="pre">IMAGE_NAME</span></code> variable is also being
 set to be an environment variable.</p></li>
-<li><p class="linemarker linemarker-40">When we execute our python program (posenet.py), we can see the three parameters the user has set up</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!python3 $PROGRAM_PATH/posenet.py --network=resnet18-body $INPUT_PATH/$IMAGE_NAME $OUTPUT_PATH/$OUTPUT_NAME
+<li><p class="linemarker linemarker-40">When we execute our python program (detectnet.py), we can see the three parameters the user has set up</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!python3 $PROGRAM_PATH/detectnet.py --network=ssd-mobilenet-v1 $INPUT_PATH/$IMAGE_NAME $OUTPUT_PATH/$OUTPUT_NAME
 </pre></div>
 </div>
 <p class="linemarker linemarker-46">With <code class="docutils literal notranslate"><span class="pre">!python3</span> <span class="pre">$PROGRAM_PATH/detectnet.py</span></code> as our activation function, we have:</p>
@@ -612,9 +609,6 @@ set to be an environment variable.</p></li>
 </ul>
 </li>
 </ul>
-</section>
-<section id="minor-functionalities">
-<h2>Minor Functionalities<a class="headerlink" href="#minor-functionalities" title="Permalink to this heading"></a></h2>
 </section>
 </section>
 

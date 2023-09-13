@@ -245,13 +245,10 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../course_2/2.ai_pose_detect/3.object_detect/4.coding_explanation.html">Coding Explanation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../course_2/2.ai_pose_detect/3.object_detect/4.coding_explanation.html#major-functionalities">Major Functionalities</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../course_2/2.ai_pose_detect/3.object_detect/4.coding_explanation.html#minor-functionalities">Minor Functionalities</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../course_2/2.ai_pose_detect/3.object_detect/5.mission.html">Mission</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../course_2/2.ai_pose_detect/3.object_detect/5.mission.html#writing-custom-detectnet-program">Writing Custom detectNet Program</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../course_2/2.ai_pose_detect/3.object_detect/5.mission.html#executing-the-custom-program">Executing the Custom Program</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../course_2/2.ai_pose_detect/3.object_detect/5.mission.html#let-s-change-the-overlay">Let’s Change the Overlay!!!</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../course_2/2.ai_pose_detect/3.object_detect/6.discussion.html">Discussion</a></li>
@@ -586,7 +583,7 @@ specific range with N particles. Initially each of the particles have 1/N weight
 is empirically determined.
 If the initial position is explicitly defined, the particles may be arranged near the robot instead of randomly scattered.</p>
 <a class=""
-               data-lightbox="group-032871c5-f827-4ef4-ac65-4fa7eb80475f"
+               data-lightbox="group-84ec3b59-86dc-4e20-a19e-306ca566b810"
                href="../../../_images/init1.png"
                title=""
                data-title=""
@@ -604,7 +601,7 @@ If the initial position is explicitly defined, the particles may be arranged nea
 <h3>2.Prediction<a class="headerlink" href="#prediction" title="Permalink to this heading"></a></h3>
 <p class="linemarker linemarker-52">With the odometry and sensory values and noise, graudally move (predict) each particles location (based on the system model).</p>
 <a class=""
-               data-lightbox="group-d603206d-391b-4c95-a3d0-77c1bb7c35c0"
+               data-lightbox="group-30d5a3e2-a033-4ae5-af54-49c3fba30499"
                href="../../../_images/mot1.png"
                title=""
                data-title=""
@@ -622,7 +619,7 @@ If the initial position is explicitly defined, the particles may be arranged nea
 <h3>3.Update<a class="headerlink" href="#update" title="Permalink to this heading"></a></h3>
 <p class="linemarker linemarker-61">Based on the measured sensor information, the probability of each particle is calculated and the <strong>weight value</strong> of each particle is updated based on the calculated probability.</p>
 <a class=""
-               data-lightbox="group-d9f8eb05-8df7-48c2-9a77-85eebb6d571f"
+               data-lightbox="group-79b8238b-e3a0-410c-93c8-f56406029e38"
                href="../../../_images/we_up1.png"
                title=""
                data-title=""
@@ -645,7 +642,7 @@ If the initial position is explicitly defined, the particles may be arranged nea
 <p class="linemarker linemarker-76">Generate new particles that inherit the pose information of the weighted particles. The number of particles must be maintained, hence, with the addition of new particles
 particles with less weight are removed.</p>
 <a class=""
-               data-lightbox="group-6d6df2dc-5e48-48e0-be52-880512fa9820"
+               data-lightbox="group-38f6b774-95fe-4ca1-bbcf-cf496ffce1ce"
                href="../../../_images/res1.png"
                title=""
                data-title=""
@@ -660,7 +657,7 @@ particles with less weight are removed.</p>
 </div>
 <p class="linemarker linemarker-84">By repeating the steps 2 ~ 5 we may end up with visualization below:</p>
 <a class=""
-               data-lightbox="group-70fb9297-14b3-46e6-96a0-8ce405c0ea25"
+               data-lightbox="group-20df8736-fbc3-4d02-80a3-6b5400c2ed8f"
                href="../../../_images/final1.png"
                title=""
                data-title=""
